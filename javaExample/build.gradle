@@ -1,0 +1,26 @@
+plugins {
+  id 'java'
+  id 'application'
+}
+
+targetCompatibility = '11'
+sourceCompatibility = '11'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+}
+
+jar {
+  manifest {
+    attributes(
+      'Main-Class': 'javaExample.App'
+    )
+  }
+}
+
+application {
+  mainClassName = 'javaExample.App'
+}
