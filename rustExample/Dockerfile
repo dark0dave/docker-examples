@@ -2,7 +2,7 @@ FROM rust:alpine3.12 as builder
 
 WORKDIR /app
 
-COPY Cargo.lock Cargo.toml .
+COPY Cargo.lock Cargo.toml ./
 
 ADD src src
 
