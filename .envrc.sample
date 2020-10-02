@@ -1,0 +1,12 @@
+set -ea
+
+###
+# Sample .envrc file containing all environment variables
+###
+
+git config --local user.email
+
+git config --local user.name
+
+git config --local user.signingkey 
+
