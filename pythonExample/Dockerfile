@@ -7,7 +7,7 @@ RUN pip install poetry \
   && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
   && rm -rf /var/lib/apt/lists/*
 
-COPY poetry.lock pyproject.toml .
+COPY poetry.lock pyproject.toml ./
 
 RUN poetry export -f requirements.txt > requirements.txt \
   && pip install -r requirements.txt \
